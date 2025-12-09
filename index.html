@@ -8,68 +8,112 @@
   <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/night.css" id="theme">
+
+  <!-- Custom styles -->
+  <style>
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    h1, h2, h3 {
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    p, li {
+      font-size: 1.1em;
+    }
+    .reveal section img {
+      border-radius: 8px;
+      max-width: 60%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+      display: block;
+      margin: 20px auto;
+    }
+    ul {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
 <div class="reveal">
   <div class="slides">
-    <!-- Slide 1 -->
+
+    <!-- Slide 1: Welcome -->
     <section>
       <h1>Welcome</h1>
-      <p>Hello! This is a short presentation about me.</p>
+      <p>Hello! My name is Asier. This is a short presentation about me and my interests.</p>
     </section>
 
-    <!-- Slide 2 horizontal -->
+    <!-- Slide 2: About Me -->
     <section>
       <h2>About Me</h2>
       <ul>
         <li>Name: Asier</li>
-        <li>Role: Student / Developer</li>
+        <li>Role: Student / Junior Developer</li>
+        <li>Location: Spain</li>
       </ul>
 
       <!-- Vertical slides -->
       <section>
         <h3>Hobbies</h3>
         <ul>
-          <li>Programming</li>
-          <li>Gaming</li>
+          <li>Programming small projects</li>
+          <li>Playing video games</li>
+          <li>Reading technology blogs</li>
         </ul>
       </section>
       
       <section>
-        <h3>Favorite Tools</h3>
+        <h3>Skills</h3>
         <ul>
-          <li>VS Code</li>
-          <li>Git & GitHub</li>
+          <li>JavaScript, HTML, CSS</li>
+          <li>Python basics</li>
+          <li>Version control with Git</li>
         </ul>
       </section>
     </section>
 
-    <!-- Slide 3 -->
+    <!-- Slide 3: Education -->
     <section>
       <h2>Education</h2>
-      <p>Studying Computer Science.</p>
+      <p>Currently studying Computer Science at university, focusing on software development, algorithms, and web technologies.</p>
+      <p>Favorite subjects include:</p>
+      <ul>
+        <li>Data Structures & Algorithms</li>
+        <li>Web Development</li>
+        <li>Artificial Intelligence basics</li>
+      </ul>
     </section>
 
-    <!-- Slide 4 -->
+    <!-- Slide 4: Projects -->
     <section>
       <h2>Projects</h2>
-      <p>Personal website, small web apps in JavaScript.</p>
+      <ul>
+        <li>Personal website showcasing my portfolio</li>
+        <li>Small web apps using JavaScript and APIs</li>
+        <li>Reveal.js presentation practice</li>
+      </ul>
+      <img src="images/example.jpg" alt="Example Project">
+      <!-- puedes reemplazar la imagen por otra -->
     </section>
 
-    <!-- Slide 5 -->
+    <!-- Slide 5: Conclusion -->
     <section>
       <h2>Conclusion</h2>
-      <p>Thanks for watching!</p>
+      <p>Thank you for watching! I enjoy learning new skills and working on interesting projects.</p>
+      <p>Feel free to reach out via email or check my GitHub for more projects.</p>
     </section>
+
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
 <script>
   Reveal.initialize({
-    hash: true,
-    slideNumber: true
+    hash: true,          // URL hash navigation
+    slideNumber: true,   // Show slide numbers
+    navigationMode: "default",
+    transition: 'fade',  // smooth fade between slides
+    backgroundTransition: 'slide'
   });
 </script>
 
