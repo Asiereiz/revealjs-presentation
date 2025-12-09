@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Reveal.js Presentation</title>
+
+  <!-- Reveal.js core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  
+  <!-- Non-default theme: Night -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/night.css" id="theme">
+
+  <!-- Optional styling for images -->
+  <style>
+    .reveal section img {
+      border-radius: 8px;
+      max-width: 70%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    <!-- Load slides from Markdown file -->
+    <section data-markdown="slides.md"
+             data-separator="^---$"
+             data-separator-vertical="^----$"
+             data-charset="utf-8">
+    </section>
+  </div>
+</div>
+
+<!-- Reveal.js core JS -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,          // Enables URL hash navigation
+    slideNumber: true,   // Show slide numbers
+    navigationMode: "default" // Keyboard navigation default
+  });
+</script>
+
+</body>
+</html>
